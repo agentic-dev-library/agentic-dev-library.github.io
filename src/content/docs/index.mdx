@@ -1,0 +1,30 @@
+---
+title: Agentic
+description: Autonomous AI development at scale
+template: splash
+hero:
+  tagline: Autonomous AI development at scale
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Getting Started
+      link: /getting-started/control/
+      icon: right-arrow
+    - text: View on GitHub
+      link: https://github.com/agentic-dev-library/agentic-dev-library.github.io
+      icon: external
+      variant: minimal
+---
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+	<Card title="Fleet Management API" icon="cloud">
+		Learn how to manage your AI agents at scale.
+	</Card>
+	<Card title="GitHub Actions" icon="github">
+		Integrate Agentic into your CI/CD pipelines.
+	</Card>
+	<Card title="CrewAI Integration" icon="rocket">
+		Leverage the power of CrewAI with Agentic.
+	</Card>
+</CardGrid>
