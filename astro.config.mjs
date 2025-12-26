@@ -8,6 +8,9 @@ export default defineConfig({
 		starlight({
 			title: 'Agentic',
 			description: 'Autonomous AI development at scale',
+			social: {
+				github: 'https://github.com/jbcom',
+			},
 			customCss: [
 				// Relative path to your custom CSS file
 				'./src/styles/custom.css',

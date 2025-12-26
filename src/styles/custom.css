@@ -1,5 +1,15 @@
+/* 
+  Agentic Division - Custom Styles
+  Integrated with jbcom Enterprise Branding
+*/
+
+/* 1. Base Enterprise Theme */
+@import 'https://raw.githubusercontent.com/jbcom/jbcom.github.io/main/enterprise-branding/starlight-base.css';
+
+/* 2. Agentic (Purple) Override */
+@import 'https://raw.githubusercontent.com/jbcom/jbcom.github.io/main/enterprise-branding/org-themes/agentic.css';
+
+/* 3. Site-specific overrides */
 :root {
-	--sl-color-accent-low: #8b5cf6;
-	--sl-color-accent: #8b5cf6;
-	--sl-color-accent-high: #8b5cf6;
+  /* You can add site-specific variables here */
 }
