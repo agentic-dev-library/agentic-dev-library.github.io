@@ -15,35 +15,43 @@ export default defineConfig({
 				// Relative path to your custom CSS file
 				'./src/styles/custom.css',
 			],
-			sidebar: [
-				{
-					label: 'Getting Started',
-					items: [
-						{ label: 'with @agentic/control', slug: 'getting-started/control' },
-					],
-				},
-				{
-					label: 'API',
-					items: [
-						{ label: 'Fleet Management', slug: 'api/fleet-management' },
-					]
-				},
-				{
-					label: 'Integrations',
-					items: [
-						{ label: 'GitHub Actions', slug: 'integrations/github-actions' },
-						{ label: 'CrewAI', slug: 'integrations/crewai' },
-					],
-				},
-				{
-					label: 'Packages',
-					items: [
-						{ label: 'control', slug: 'packages/control' },
-						{ label: 'triage', slug: 'packages/triage' },
-						{ label: 'crew', slug: 'packages/crew' },
-					],
-				},
-			],
+  sidebar: [
+    {
+      label: 'Getting Started',
+      items: [
+        { label: 'with @agentic/control', slug: 'getting-started/control' },
+      ],
+    },
+    {
+      label: 'API',
+      items: [
+        { label: 'Fleet Management', slug: 'api/fleet-management' },
+      ]
+    },
+    {
+      label: 'Integrations',
+      items: [
+        { label: 'GitHub Actions', slug: 'integrations/github-actions' },
+        { label: 'CrewAI', slug: 'integrations/crewai' },
+      ],
+    },
+    {
+      label: 'Packages',
+      items: [
+        { label: 'control', slug: 'packages/control' },
+        { label: 'triage', slug: 'packages/triage' },
+        { label: 'crew', slug: 'packages/crew' },
+      ],
+    },
+    {
+      label: 'Enterprise',
+      items: [
+        { label: 'jbcom Hub', link: 'https://jbcom.github.io' },
+        { label: 'Strata (Games)', link: 'https://strata.game' },
+        { label: 'Extended Data (Infra)', link: 'https://extendeddata.dev' },
+      ],
+    },
+  ],
 		}),
 	],
 });
