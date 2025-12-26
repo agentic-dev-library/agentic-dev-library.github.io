@@ -9,7 +9,7 @@ This guide demonstrates fleet-level operations: listing agents, filtering by sta
 
 ## Prerequisites
 
-- `agentic-control` installed globally
+- `@agentic-dev-library/control` installed globally
 - `CURSOR_API_KEY` environment variable set
 
 ## CLI Commands
@@ -59,7 +59,7 @@ agentic fleet followup bc-xxx-xxx "Please provide a status update"
 ### Fleet Summary
 
 ```typescript
-import { Fleet } from 'agentic-control';
+import { Fleet } from '@agentic-dev-library/control';
 
 async function getFleetStatus() {
   const fleet = new Fleet();
@@ -84,8 +84,8 @@ async function getFleetStatus() {
 ### Display Agents Table
 
 ```typescript
-import type { Agent } from 'agentic-control';
-import { Fleet } from 'agentic-control';
+import type { Agent } from '@agentic-dev-library/control';
+import { Fleet } from '@agentic-dev-library/control';
 
 function displayAgents(agents: Agent[]): void {
   if (agents.length === 0) {
@@ -124,7 +124,7 @@ async function listAllAgents() {
 Send a message to all running agents simultaneously:
 
 ```typescript
-import { Fleet } from 'agentic-control';
+import { Fleet } from '@agentic-dev-library/control';
 
 async function broadcastStatusCheck() {
   const fleet = new Fleet();
@@ -159,7 +159,7 @@ async function broadcastStatusCheck() {
 ### List Available Repositories
 
 ```typescript
-import { Fleet } from 'agentic-control';
+import { Fleet } from '@agentic-dev-library/control';
 
 async function listRepositories() {
   const fleet = new Fleet();
@@ -182,8 +182,8 @@ async function listRepositories() {
 From the [control repository examples](https://github.com/agentic-dev-library/control/blob/main/examples/02-fleet-management.ts):
 
 ```typescript
-import type { Agent, AgentStatus } from 'agentic-control';
-import { Fleet } from 'agentic-control';
+import type { Agent, AgentStatus } from '@agentic-dev-library/control';
+import { Fleet } from '@agentic-dev-library/control';
 
 function displayAgents(agents: Agent[]): void {
   if (agents.length === 0) {

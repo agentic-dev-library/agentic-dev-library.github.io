@@ -12,7 +12,7 @@ These examples are taken directly from the Agentic repositories. They demonstrat
 This example from [`control/examples/01-agent-spawn.ts`](https://github.com/agentic-dev-library/control/blob/main/examples/01-agent-spawn.ts) shows how to spawn a Cursor Background Agent and monitor it until completion.
 
 ```typescript
-import { Fleet } from 'agentic-control';
+import { Fleet } from '@agentic-dev-library/control';
 
 async function main(): Promise<void> {
   console.log('🚀 Agent Spawning Example\n');
@@ -104,8 +104,8 @@ main().catch(console.error);
 From [`control/examples/02-fleet-management.ts`](https://github.com/agentic-dev-library/control/blob/main/examples/02-fleet-management.ts), this shows fleet-level operations.
 
 ```typescript
-import type { Agent, AgentStatus } from 'agentic-control';
-import { Fleet } from 'agentic-control';
+import type { Agent, AgentStatus } from '@agentic-dev-library/control';
+import { Fleet } from '@agentic-dev-library/control';
 
 function displayAgents(agents: Agent[]): void {
   if (agents.length === 0) {
@@ -271,8 +271,8 @@ main().catch(console.error);
 From [`control/examples/03-orchestration-patterns.ts`](https://github.com/agentic-dev-library/control/blob/main/examples/03-orchestration-patterns.ts), advanced multi-agent coordination:
 
 ```typescript
-import type { DiamondConfig, SpawnOptions } from 'agentic-control';
-import { Fleet } from 'agentic-control';
+import type { DiamondConfig, SpawnOptions } from '@agentic-dev-library/control';
+import { Fleet } from '@agentic-dev-library/control';
 
 async function diamondPatternExample(fleet: Fleet): Promise<void> {
   console.log('💎 Diamond Pattern Orchestration');
@@ -363,7 +363,7 @@ import {
   getTokenForRepo,
   setTokenConfig,
   addOrganization,
-} from 'agentic-control';
+} from '@agentic-dev-library/control';
 
 // Configure organizations
 addOrganization({

@@ -1,6 +1,6 @@
 ---
 title: Agent Spawning
-description: Learn how to spawn and monitor AI agents with agentic-control
+description: Learn how to spawn and monitor AI agents with @agentic-dev-library/control
 ---
 
 # Agent Spawning Guide
@@ -9,7 +9,7 @@ This guide demonstrates how to spawn a single Cursor Background Agent and monito
 
 ## Prerequisites
 
-- `agentic-control` installed globally
+- `@agentic-dev-library/control` installed globally
 - `CURSOR_API_KEY` environment variable set
 - `GITHUB_TOKEN` with repo access
 
@@ -45,7 +45,7 @@ agentic fleet spawn "https://github.com/my-org/my-repo" \
 ### Basic Example
 
 ```typescript
-import { Fleet } from 'agentic-control';
+import { Fleet } from '@agentic-dev-library/control';
 
 async function spawnAgent() {
   // Initialize Fleet manager
@@ -89,7 +89,7 @@ async function spawnAgent() {
 ### Monitoring Progress
 
 ```typescript
-import { Fleet } from 'agentic-control';
+import { Fleet } from '@agentic-dev-library/control';
 
 async function spawnAndMonitor() {
   const fleet = new Fleet();
@@ -134,7 +134,7 @@ async function spawnAndMonitor() {
 This is a complete example from the [control repository](https://github.com/agentic-dev-library/control/blob/main/examples/01-agent-spawn.ts):
 
 ```typescript
-import { Fleet } from 'agentic-control';
+import { Fleet } from '@agentic-dev-library/control';
 
 async function main(): Promise<void> {
   console.log('🚀 Agent Spawning Example\n');

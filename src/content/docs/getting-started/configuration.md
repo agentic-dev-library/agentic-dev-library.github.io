@@ -217,7 +217,7 @@ Configure Agentic programmatically in your TypeScript/JavaScript code:
 import { 
   setTokenConfig,
   addOrganization,
-} from 'agentic-control';
+} from '@agentic-dev-library/control';
 
 // Configure everything at once
 setTokenConfig({

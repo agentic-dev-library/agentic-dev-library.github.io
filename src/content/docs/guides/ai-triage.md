@@ -9,7 +9,7 @@ This guide covers using AI-powered triage for code review, conversation analysis
 
 ## Prerequisites
 
-- `agentic-control` installed
+- `@agentic-dev-library/control` installed
 - At least one AI provider SDK installed
 - API key for your chosen provider
 
@@ -71,7 +71,7 @@ agentic triage analyze bc-xxx-xxx --model claude-opus-4-20250514
 ### Basic Analysis
 
 ```typescript
-import { AIAnalyzer } from 'agentic-control';
+import { AIAnalyzer } from '@agentic-dev-library/control';
 
 async function analyzeError() {
   const analyzer = new AIAnalyzer({
@@ -91,7 +91,7 @@ async function analyzeError() {
 ### With Specific Provider
 
 ```typescript
-import { AIAnalyzer } from 'agentic-control';
+import { AIAnalyzer } from '@agentic-dev-library/control';
 
 async function analyzeWithOpenAI() {
   const analyzer = new AIAnalyzer({
@@ -109,7 +109,7 @@ async function analyzeWithOpenAI() {
 ### Analyze Agent Conversation
 
 ```typescript
-import { Fleet, AIAnalyzer } from 'agentic-control';
+import { Fleet, AIAnalyzer } from '@agentic-dev-library/control';
 
 async function analyzeAgentWork(agentId: string) {
   const fleet = new Fleet();
@@ -139,7 +139,7 @@ async function analyzeAgentWork(agentId: string) {
 ### Code Review
 
 ```typescript
-import { AIAnalyzer } from 'agentic-control';
+import { AIAnalyzer } from '@agentic-dev-library/control';
 
 async function reviewPR() {
   const analyzer = new AIAnalyzer({ repo: 'my-org/my-repo' });
@@ -328,7 +328,7 @@ const result = await analyzer.quickTriage(prompt);
 ### 3. Cache Results for Development
 
 ```typescript
-import { AIAnalyzer } from 'agentic-control';
+import { AIAnalyzer } from '@agentic-dev-library/control';
 
 const analyzer = new AIAnalyzer({
   repo: 'my-org/my-repo',

@@ -7,7 +7,7 @@ description: Unified AI agent fleet management, triage, and orchestration toolki
 
 > 🚀 **Unified AI agent fleet management, triage, and orchestration toolkit**
 
-[![npm version](https://badge.fury.io/js/agentic-control.svg)](https://www.npmjs.com/package/agentic-control)
+[![npm version](https://badge.fury.io/js/@agentic-dev-library/control.svg)](https://www.npmjs.com/package/@agentic-dev-library/control)
 [![Docker Pulls](https://img.shields.io/docker/pulls/jbcom/agentic-control)](https://hub.docker.com/r/jbcom/agentic-control)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
@@ -32,9 +32,9 @@ description: Unified AI agent fleet management, triage, and orchestration toolki
 
 ```bash
 # Install globally
-pnpm add -g agentic-control
+pnpm add -g @agentic-dev-library/control
 # or
-npm install -g agentic-control
+npm install -g @agentic-dev-library/control
 
 # Verify installation
 agentic --version
@@ -199,7 +199,7 @@ agentic handoff takeover <predecessor-id> 123 my-new-branch
 ### Fleet Management
 
 ```typescript
-import { Fleet, GitHubClient, getTokenForRepo } from 'agentic-control';
+import { Fleet, GitHubClient, getTokenForRepo } from '@agentic-dev-library/control';
 
 // Initialize Fleet manager
 const fleet = new Fleet();
@@ -247,7 +247,7 @@ import {
   getTokenForRepo,
   setTokenConfig,
   addOrganization,
-} from 'agentic-control';
+} from '@agentic-dev-library/control';
 
 // Configure organizations
 addOrganization({
@@ -273,7 +273,7 @@ setTokenConfig({
 ### AI Analysis
 
 ```typescript
-import { AIAnalyzer } from 'agentic-control';
+import { AIAnalyzer } from '@agentic-dev-library/control';
 
 // Use default provider (from config)
 const analyzer = new AIAnalyzer({ repo: 'my-company/my-repo' });
@@ -291,7 +291,7 @@ const openaiAnalyzer = new AIAnalyzer({
 ### Sandbox Execution
 
 ```typescript
-import { SandboxExecutor } from 'agentic-control';
+import { SandboxExecutor } from '@agentic-dev-library/control';
 
 const sandbox = new SandboxExecutor();
 
@@ -423,6 +423,6 @@ Package publishing uses OpenID Connect authentication instead of long-lived toke
 ## Links
 
 - [GitHub Repository](https://github.com/agentic-dev-library/control)
-- [npm Package](https://www.npmjs.com/package/agentic-control)
+- [npm Package](https://www.npmjs.com/package/@agentic-dev-library/control)
 - [Docker Hub](https://hub.docker.com/r/jbcom/agentic-control)
 - [API Reference](/api/fleet-management/)

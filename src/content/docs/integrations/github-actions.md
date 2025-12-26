@@ -31,7 +31,7 @@ jobs:
           node-version: '22'
 
       - name: Install Agentic
-        run: npm install -g agentic-control
+        run: npm install -g @agentic-dev-library/control
 
       - name: Review PR
         env:
@@ -73,7 +73,7 @@ jobs:
           node-version: '22'
 
       - name: Install dependencies
-        run: npm install -g agentic-control @ai-sdk/anthropic
+        run: npm install -g @agentic-dev-library/control @ai-sdk/anthropic
 
       - name: Run AI Review
         env:
@@ -116,7 +116,7 @@ jobs:
           node-version: '22'
 
       - name: Install Agentic
-        run: npm install -g agentic-control @ai-sdk/anthropic
+        run: npm install -g @agentic-dev-library/control @ai-sdk/anthropic
 
       - name: Triage Issue
         env:
@@ -169,7 +169,7 @@ jobs:
           node-version: '22'
 
       - name: Install Agentic
-        run: npm install -g agentic-control
+        run: npm install -g @agentic-dev-library/control
 
       - name: Spawn Agent
         env:
@@ -219,7 +219,7 @@ jobs:
           node-version: '22'
 
       - name: Install Agentic
-        run: npm install -g agentic-control @ai-sdk/anthropic
+        run: npm install -g @agentic-dev-library/control @ai-sdk/anthropic
 
       - name: Run Security Audit
         env:
@@ -351,7 +351,7 @@ jobs:
         with:
           node-version: '22'
 
-      - run: npm install -g agentic-control @ai-sdk/anthropic
+      - run: npm install -g @agentic-dev-library/control @ai-sdk/anthropic
 
       - name: AI Code Review
         run: |
@@ -374,7 +374,7 @@ jobs:
         with:
           node-version: '22'
 
-      - run: npm install -g agentic-control @ai-sdk/anthropic
+      - run: npm install -g @agentic-dev-library/control @ai-sdk/anthropic
 
       - name: Triage Issue
         run: |
@@ -396,7 +396,7 @@ jobs:
         with:
           node-version: '22'
 
-      - run: npm install -g agentic-control
+      - run: npm install -g @agentic-dev-library/control
 
       - name: Spawn Agent
         env:
@@ -419,7 +419,7 @@ jobs:
         with:
           node-version: '22'
 
-      - run: npm install -g agentic-control @ai-sdk/anthropic
+      - run: npm install -g @agentic-dev-library/control @ai-sdk/anthropic
 
       - name: Run Audit
         run: |

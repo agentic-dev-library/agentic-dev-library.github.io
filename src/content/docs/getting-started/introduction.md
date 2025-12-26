@@ -15,7 +15,7 @@ Agentic is a comprehensive ecosystem of tools designed to make working with AI a
 Automatically routes GitHub operations to the correct tokens based on repository organization. No more manual token switching!
 
 ```typescript
-import { getTokenForRepo } from 'agentic-control';
+import { getTokenForRepo } from '@agentic-dev-library/control';
 
 // Automatically uses GITHUB_MYCOMPANY_TOKEN for my-company repos
 const token = getTokenForRepo('my-company/my-repo');

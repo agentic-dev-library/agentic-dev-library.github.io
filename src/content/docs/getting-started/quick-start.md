@@ -9,7 +9,7 @@ This guide will get you up and running with Agentic in under 5 minutes. We'll in
 
 ## Prerequisites
 
-- **Node.js 18+** (for agentic-control)
+- **Node.js 18+** (for @agentic-dev-library/control)
 - **Python 3.10+** (for agentic-crew, optional)
 - **Git** configured with at least one remote repository
 - **GitHub Personal Access Token** with `repo` scope
@@ -20,9 +20,9 @@ This guide will get you up and running with Agentic in under 5 minutes. We'll in
 
 ```bash
 # Install the control package globally
-pnpm add -g agentic-control
+pnpm add -g @agentic-dev-library/control
 # or
-npm install -g agentic-control
+npm install -g @agentic-dev-library/control
 
 # Verify installation
 agentic --version

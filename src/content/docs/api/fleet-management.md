@@ -1,22 +1,22 @@
 ---
 title: Fleet API Reference
-description: Complete API reference for agentic-control Fleet management
+description: Complete API reference for @agentic-dev-library/control Fleet management
 ---
 
 # Fleet API Reference
 
-Complete reference for the `Fleet` class from `agentic-control`.
+Complete reference for the `Fleet` class from `@agentic-dev-library/control`.
 
 ## Installation
 
 ```bash
-npm install agentic-control
+npm install @agentic-dev-library/control
 ```
 
 ## Import
 
 ```typescript
-import { Fleet } from 'agentic-control';
+import { Fleet } from '@agentic-dev-library/control';
 ```
 
 ## Constructor
