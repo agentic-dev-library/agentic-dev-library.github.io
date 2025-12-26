@@ -1,7 +1,8 @@
 {
-  "name": "temp-astro",
+  "name": "agentic-docs",
+  "description": "Agentic documentation site - AI agent fleet management, orchestration, and triage toolkit",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

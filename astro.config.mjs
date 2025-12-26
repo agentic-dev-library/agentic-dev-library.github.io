@@ -14,9 +14,9 @@ export default defineConfig({
 				dark: './src/assets/logo-dark.svg',
 				replacesTitle: false,
 			},
-			social: {
-				github: 'https://github.com/agentic-dev-library',
-			},
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/agentic-dev-library' },
+			],
 			customCss: [
 				'./src/styles/custom.css',
 			],
